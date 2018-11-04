@@ -22,4 +22,16 @@ export HADOOP_CLASSPATH=${JAVA_HOME}/lib/tools.jar
 * bin/hadoop jar wc.jar WordCount2 -Dwordcount.case.sensitive=false /user/zx/wordcount/input /user/zx/wordcount/output -skip /user/zx/wordcount/patterns.txt  
 * bin/hadoop fs -cat /user/joe/wordcount/output/part-r-00000    
 ![](https://github.com/JohnZhangninesun/bigdata_homework4/blob/master/screenshot/patterns.PNG)  
-![](https://github.com/JohnZhangninesun/bigdata_homework4/blob/master/screenshot/wordcount2.PNG)
+![](https://github.com/JohnZhangninesun/bigdata_homework4/blob/master/screenshot/wordcount2.PNG)  
+## 矩阵乘法mapreduce实现：  
+### 1.编译 Matrix.java:  
+* bin/hadoop com.sun.tools.javac.Main Matrix.java  
+* jar cf mr.jar Matrix*.class  
+### 2.上传M_10_15和N_15_20文件  
+* bin/hadoop fs -put M_10_15 /user/zx/matrix/input  
+* bin/hadoop fs -put N_15_20 /user/zx/matrix/input  
+### 3.运行程序,查看结果：  
+* bin/hadoop jar mr.jar Matrix /user/zx/matrix/input /user/zx/matrix/output  
+* bin/hadoop fs -cat /user/joe/matrix/output/part-r-00000  
+![](https://github.com/JohnZhangninesun/bigdata_homework4/blob/master/screenshot/matrix1.PNG)
+![](https://github.com/JohnZhangninesun/bigdata_homework4/blob/master/screenshot/matrix2.PNG)
