@@ -1,5 +1,4 @@
-# bigdata_homework4
-2018-2019年第一学期 金融大数据作业4
+# bigdata_homework4(本次作业由于集成环境暂时还没有配置好，选择用命令行编译打包运行的，浪费了较多时间）
 ## wordcount2.0
 ### 1.配置环境变量：
 * vim /etc/profile  
