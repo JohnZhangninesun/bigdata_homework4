@@ -51,6 +51,7 @@ export HADOOP_CLASSPATH=${JAVA_HOME}/lib/tools.jar
 ![](https://github.com/JohnZhangninesun/bigdata_homework4/blob/master/screenshot/union2.PNG)  
 ### 4. 求Ra1和Ra2的交集：
 ![](https://github.com/JohnZhangninesun/bigdata_homework4/blob/master/screenshot/Intersection.PNG)
+![](https://github.com/JohnZhangninesun/bigdata_homework4/blob/master/screenshot/Intersection2.PNG)
 ### 5. 求Ra1-Ra2：
 ![](https://github.com/JohnZhangninesun/bigdata_homework4/blob/master/screenshot/difference.PNG)
 ### 6: Ra和Rb在属性id上进行自然连接：
