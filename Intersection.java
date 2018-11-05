@@ -32,7 +32,7 @@ public class Intersection{
 	}
 	public static void main(String[] args) throws Exception{
 		Configuration conf = new Configuration();
-		Job intersectionJob = new Job(conf, "intersectionJob");
+		Job intersectionJob = Job.getInstance(conf, "intersectionJob");
 		intersectionJob.setJarByClass(Intersection.class);
 		intersectionJob.setMapperClass(IntersectionMap.class);
 		intersectionJob.setReducerClass(IntersectionReduce.class);
