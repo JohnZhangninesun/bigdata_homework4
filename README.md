@@ -1,4 +1,4 @@
-# bigdata_homework4(本次作业由于集成环境暂时还没有配置好，选择用命令行编译打包运行的，浪费了较多时间）
+# bigdata_homework4(本次作业由于集成环境暂时还没有配置好，选择用命令行编译打包运行的）
 ## wordcount2.0
 ### 1.配置环境变量：
 * vim /etc/profile  
@@ -40,9 +40,12 @@ export HADOOP_CLASSPATH=${JAVA_HOME}/lib/tools.jar
 * bin/hadoop fs -cat /user/zx/relation/output/part-m-00000  
 ![](https://github.com/JohnZhangninesun/bigdata_homework4/blob/master/screenshot/projection0.PNG)
 ![](https://github.com/JohnZhangninesun/bigdata_homework4/blob/master/screenshot/projection.PNG)
-### 2. 在Ra.txt上选择age=18的记录；在Ra.txt上选择age>18的记录：
+### 2. 在Ra.txt上选择age=18的记录；
 ![](https://github.com/JohnZhangninesun/bigdata_homework4/blob/master/screenshot/relation.PNG)
 ![](https://github.com/JohnZhangninesun/bigdata_homework4/blob/master/screenshot/relation2.PNG)
+### 在Ra.txt上选择age>18的记录：
+![](https://github.com/JohnZhangninesun/bigdata_homework4/blob/master/screenshot/relation3.PNG)
+![](https://github.com/JohnZhangninesun/bigdata_homework4/blob/master/screenshot/relation4.PNG)
 ### 3. 求Ra1和Ra2的并集：
 ![](https://github.com/JohnZhangninesun/bigdata_homework4/blob/master/screenshot/union.PNG)  
 ### 4. 求Ra1和Ra2的交集：
