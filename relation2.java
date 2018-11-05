@@ -39,7 +39,7 @@ public class relation {
 		@Override
 		public void setup(Context context){
 			col = context.getConfiguration().getInt("col", 2);
-			value > context.getConfiguration().get("value");
+			value = context.getConfiguration().get("value");
 		}
 
 		@Override
@@ -55,7 +55,7 @@ public class relation {
 		conf.setInt("col", Integer.parseInt(args[2]));
 		conf.set("value", args[3]);
 
-		Job selectionJob = new Job(conf, "selectionJob");
+		Job selectionJob = Job.getInstance(conf, "selectionJob");
 		selectionJob.setJarByClass(relation.class);
 		selectionJob.setMapperClass(SelectionMap.class);
 		selectionJob.setMapOutputKeyClass(Text.class);
