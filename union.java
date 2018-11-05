@@ -32,7 +32,7 @@ public class union{
 	}
 	public static void main(String[] args) throws Exception{
 		Configuration conf = new Configuration();
-		Job unionJob = new Job(conf, "unionJob");
+		Job unionJob = Job.getInstance(conf, "unionJob");
 		unionJob.setJarByClass(union.class);
 		unionJob.setMapperClass(UnionMap.class);
 		unionJob.setReducerClass(UnionReduce.class);
