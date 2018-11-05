@@ -26,7 +26,7 @@ public class relation {
 		}
 
 		public boolean isCondition(int col, String value){
-			if(col == 2 && Integer.parseInt(value) < age) 
+			if(col == 2 && Integer.parseInt(value) == age) 
 				return true;
 			return false;
 		}
@@ -55,7 +55,7 @@ public class relation {
 		conf.setInt("col", Integer.parseInt(args[2]));
 		conf.set("value", args[3]);
 
-		Job selectionJob = new Job(conf, "selectionJob");
+		Job selectionJob = Job.getInstance(conf, "selectionJob");
 		selectionJob.setJarByClass(relation.class);
 		selectionJob.setMapperClass(SelectionMap.class);
 		selectionJob.setMapOutputKeyClass(Text.class);
