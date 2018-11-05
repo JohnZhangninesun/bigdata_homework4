@@ -41,11 +41,11 @@ export HADOOP_CLASSPATH=${JAVA_HOME}/lib/tools.jar
 ![](https://github.com/JohnZhangninesun/bigdata_homework4/blob/master/screenshot/projection0.PNG)
 ![](https://github.com/JohnZhangninesun/bigdata_homework4/blob/master/screenshot/projection.PNG)
 ### 2. 在Ra.txt上选择age=18的记录；
-![](https://github.com/JohnZhangninesun/bigdata_homework4/blob/master/screenshot/relation.PNG)
-![](https://github.com/JohnZhangninesun/bigdata_homework4/blob/master/screenshot/relation2.PNG)
-### 在Ra.txt上选择age>18的记录：
 ![](https://github.com/JohnZhangninesun/bigdata_homework4/blob/master/screenshot/relation3.PNG)
 ![](https://github.com/JohnZhangninesun/bigdata_homework4/blob/master/screenshot/relation4.PNG)
+### 在Ra.txt上选择age>18的记录：
+![](https://github.com/JohnZhangninesun/bigdata_homework4/blob/master/screenshot/relation.PNG)
+![](https://github.com/JohnZhangninesun/bigdata_homework4/blob/master/screenshot/relation2.PNG)
 ### 3. 求Ra1和Ra2的并集：
 ![](https://github.com/JohnZhangninesun/bigdata_homework4/blob/master/screenshot/union.PNG)  
 ### 4. 求Ra1和Ra2的交集：
