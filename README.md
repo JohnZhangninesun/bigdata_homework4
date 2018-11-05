@@ -48,6 +48,7 @@ export HADOOP_CLASSPATH=${JAVA_HOME}/lib/tools.jar
 ![](https://github.com/JohnZhangninesun/bigdata_homework4/blob/master/screenshot/relation2.PNG)
 ### 3. 求Ra1和Ra2的并集：
 ![](https://github.com/JohnZhangninesun/bigdata_homework4/blob/master/screenshot/union.PNG)  
+![](https://github.com/JohnZhangninesun/bigdata_homework4/blob/master/screenshot/union2.PNG)  
 ### 4. 求Ra1和Ra2的交集：
 ![](https://github.com/JohnZhangninesun/bigdata_homework4/blob/master/screenshot/Intersection.PNG)
 ### 5. 求Ra1-Ra2：
