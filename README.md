@@ -41,18 +41,30 @@ export HADOOP_CLASSPATH=${JAVA_HOME}/lib/tools.jar
 ![](https://github.com/JohnZhangninesun/bigdata_homework4/blob/master/screenshot/projection0.PNG)
 ![](https://github.com/JohnZhangninesun/bigdata_homework4/blob/master/screenshot/projection.PNG)
 ### 2. 在Ra.txt上选择age=18的记录；
+* hadoop jar relation2.jar relation /user/zx/relation/input/Ra.txt /user/zx/relation/re_output2 2 18
+* hadoop fs -cat /user/zx/relation/re_output2/part-m-00000  
 ![](https://github.com/JohnZhangninesun/bigdata_homework4/blob/master/screenshot/relation3.PNG)
 ![](https://github.com/JohnZhangninesun/bigdata_homework4/blob/master/screenshot/relation4.PNG)
-### 在Ra.txt上选择age>18的记录：
+### 在Ra.txt上选择age>18的记录：  
+* hadoop jar relation.jar relation /user/zx/relation/input/Ra.txt /user/zx/relation/re_output 2 18
+* hadoop fs -cat /user/zx/relation/re_output/part-m-00000
 ![](https://github.com/JohnZhangninesun/bigdata_homework4/blob/master/screenshot/relation.PNG)
 ![](https://github.com/JohnZhangninesun/bigdata_homework4/blob/master/screenshot/relation2.PNG)
 ### 3. 求Ra1和Ra2的并集：
+* hadoop jar union.jar union /user/zx/relation/input/Ra1.txt /user/zx/relation/input/Ra2.txt /user/zx/relation/un_output
+* hadoop fs -cat /user/zx/relation/un_output/part-r-00000
 ![](https://github.com/JohnZhangninesun/bigdata_homework4/blob/master/screenshot/union.PNG)  
 ![](https://github.com/JohnZhangninesun/bigdata_homework4/blob/master/screenshot/union2.PNG)  
 ### 4. 求Ra1和Ra2的交集：
+* hadoop jar int.jar Intersection /user/zx/relation/input/Ra1.txt /user/zx/relation/input/Ra2.txt /user/zx/relation/int_output
+* hadoop fs -cat /user/zx/relation/int_output/part-r-00000
 ![](https://github.com/JohnZhangninesun/bigdata_homework4/blob/master/screenshot/Intersection.PNG)
 ![](https://github.com/JohnZhangninesun/bigdata_homework4/blob/master/screenshot/Intersection2.PNG)
 ### 5. 求Ra1-Ra2：
+* hadoop jar dif.jar difference /user/zx/relation/input/Ra1.txt /user/zx/relation/input/Ra2.txt /user/zx/relation/dif_output 
+* hadoop fs -cat /user/zx/relation/dif_output/part-r-00000
 ![](https://github.com/JohnZhangninesun/bigdata_homework4/blob/master/screenshot/difference.PNG)
 ### 6: Ra和Rb在属性id上进行自然连接：
+* hadoop jar nu.jar nujoin /user/zx/relation/input/Ra.txt /user/zx/relation/input/Rb.txt /user/zx/relation/nu_output
+* hadoop fs -cat /user/zx/relation/nu_output/part-r-00000
 ![](https://github.com/JohnZhangninesun/bigdata_homework4/blob/master/screenshot/nujoin.PNG)
